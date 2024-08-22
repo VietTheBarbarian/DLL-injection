@@ -1,4 +1,5 @@
 # DLL-injection
+Summary: THIS IS LAME. WE WANT TO LOAD DLL FROM MEMORY
 Rushed will goback and explain it better
 Usually fun with injecting into video games
 basic dll injection script 
